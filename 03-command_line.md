@@ -65,7 +65,6 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.  
 xargs breaks a list of arguments into individual commands, executes these commands individually. Additionally it appears that xargs can be used for parallelization as well which is a function I was not previously familiar with! Going to have to check that out as well.  
-ex: 
-find /home/user/folder/ -print | xargs rm   
+_ex: find /home/user/folder/ -print | xargs rm_  
 will remove the files in the path even if just running rm * in the given directory would have failed due to there being too many arguments.
 
