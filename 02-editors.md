@@ -58,14 +58,14 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 
 ###Q1. Terminal Editor
 
-What terminal editor will you use? How did you make your decision?
+What terminal editor will you use? How did you make your decision?  
 
 I'm using vim, it's what I've used previously on various project & for work
 --
 
 ###Q2. Graphical Editor
 
-What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
+What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?  
 
 I'm using Atom, once again it's just what I'm comfortable with. I'm not sure that I did anything particularly interesting in terms of configuration as I've been using it for a while on this machine.
  
