@@ -61,6 +61,7 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 What terminal editor will you use? How did you make your decision?  
 
 I'm using vim, it's what I've used previously on various project & for work
+
 --
 
 ###Q2. Graphical Editor
