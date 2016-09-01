@@ -1,13 +1,18 @@
-# Hint:  use Google to find python function
+from datetime import datetime as dt
 
-####a) 
-date_start = '01-02-2013'  
-date_stop = '07-28-2015'   
+date_dict = {
+        'a' : ['01-02-2013','07-28-2015','%m-%d-%Y'],
+        'b' : ['12312013','05282015','%m%d%Y'],
+        'c' : ['15-Jan-1994','14-Jul-2015','%d-%b-%Y']
+        }
 
-####b)  
-date_start = '12312013'  
-date_stop = '05282015'  
+def diffsolve(dateinfo):
+    sol = dt.strptime(dateinfo[1], dateinfo[2]) - dt.strptime(dateinfo[0],dateinfo[2])
+    print sol
 
-####c)  
-date_start = '15-Jan-1994'  
-date_stop = '14-Jul-2015'  
+
+
+
+for date in date_dict:
+    print date
+    diffsolve(date_dict[date])
