@@ -3,6 +3,13 @@
 
 
 def match_ends(words):
+    count = 0
+    for i in words:
+        if len(i) >=2:
+            if i[0] == i[-1]:
+                count += 1
+    return count
+    
     """
     Given a list of strings, return the count of the number of strings
     where the string length is 2 or more and the first and last chars
@@ -19,6 +26,22 @@ def match_ends(words):
 
 
 def front_x(words):
+    x_list = []
+    rest_list = []
+    final_list = []
+    for i in words:
+        if i[0] == 'x':
+            x_list.append(i)
+        else:
+            rest_list.append(i)
+    x_list = sorted(x_list)
+    rest_list = sorted(rest_list)
+    for i in x_list:
+        final_list.append(i)
+    for i in rest_list:
+        final_list.append(i)
+    return final_list
+
     """
     Given a list of strings, return a list with the strings in sorted
     order, except group all the strings that begin with 'x' first.
@@ -36,6 +59,8 @@ def front_x(words):
 
 
 def sort_last(tuples):
+    return sorted(tuples, key = lambda x: x[-1])
+
     """
     Given a list of non-empty tuples, return a list sorted in
     increasing order by the last element in each tuple.
@@ -53,6 +78,16 @@ def sort_last(tuples):
 
 
 def remove_adjacent(nums):
+    j = 0
+    i = len(nums)-1
+    while j < i:
+        if nums[j] == nums[j+1]:
+            nums.pop(j+1)
+            i = len(nums)-1
+        else:j+=1
+    return nums
+
+    
     """
     Given a list of numbers, return a list where all adjacent equal
     elements have been reduced to a single element, so [1, 2, 2, 3]
@@ -72,6 +107,30 @@ def remove_adjacent(nums):
 
 
 def linear_merge(list1, list2):
+    merged_list = []
+    merged_len = len(list1) + len(list2)
+    i = 0
+    j = 0
+
+    while len(merged_list) !=  merged_len:
+        if len(list1) == i:
+            merged_list += list2[j:]
+            break
+        elif len(list2) == j:
+            merged_list += list1[i:]
+            break
+        elif list1[i] < list2[j]:
+            merged_list.append(list1[i])
+            i+=1
+        elif list2[j] < list1[i]:
+            merged_list.append(list2[j])
+            j+=1
+        elif list2[j] == list1[i]:
+            merged_list.append(list2[j])
+            merged_list.append(list1[i])
+            j+=1
+            i+=1
+    return merged_list
     """
     Given two lists sorted in increasing order, create and return a
     merged list of all the elements in sorted order. You may modify

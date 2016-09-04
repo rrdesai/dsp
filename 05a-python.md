@@ -29,7 +29,7 @@ How are Python lists and sets similar and different? Give examples of using both
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> lambda allows the user to define (simple) functions on the fly without having to formally declare them. an example would be mod_11 = lambda x: x%11. This could then be used in a sort: sorted([123,456,789,101,112,131,415], key = lambda x: x%11) which would return the list sorted not by the numbers themselves but rather by their remainders when divided by 11 since they would be run through the lambda operation. 
 
 ---
 
@@ -52,7 +52,8 @@ date_start = '01-02-2013'
 date_stop = '07-28-2015'
 ```
 
->> 937 days
+>> 937 days  
+
 b.  
 ```
 date_start = '12312013'  
