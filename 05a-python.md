@@ -21,7 +21,7 @@ Tuples will work as keys in a dictionary because they are immutable.
 
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Lists and sets are both data structures but lists are ordered while sets are not. Additonally, items in a set must be unique while lists may contain duplicate entries. When finding an element sets will return a result much faster since sets are implemented using hash tables which performs a key/value lookup when trying to locate an element. 
 
 ---
 
@@ -37,7 +37,7 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> comprehensions allow for the construction of lists/sets/dicts based on a set of rules. map and filter can be combined with other methods to have identical results but for simple constructions 
 
 ---
 
