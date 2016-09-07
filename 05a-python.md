@@ -37,7 +37,7 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> comprehensions allow for the construction of lists/sets/dicts based on a set of rules. map and filter can be combined with other methods to have identical results but for simple constructions 
+>> comprehensions allow for the construction of lists/sets/dicts based on a set of rules. map and filter can be combined with other methods to have identical results but for simple constructions. a list comprehension that creates a list containing the cubes of all numbers from 1 to 19 would read: listcomp = [i**3 for i in range(1:20)]. The equivalent operation using map and filter respectively could be written as maplist = map(lambda x: x**3, range(1,20)) and fillist = filter(lambda x: round(x**(1./3),14)%1 == 0 , search_rng)
 
 ---
 
