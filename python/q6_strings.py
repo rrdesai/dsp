@@ -25,7 +25,7 @@ def donuts(count):
     return result
 
 def both_ends(s):
-    if len(s) > 2:
+    if len(s) >= 2:
         return s[:2] + s[-2:]
     else:
         return ''
@@ -97,7 +97,9 @@ def mix_up(a, b):
         b_list.append(i)
 
     a_list[0] = b[0]
+    a_list[1] = b[1]
     b_list[0] = a[0]
+    b_list[1] = a[1]
     
     anew = ''.join(a_list)
     bnew = ''.join(b_list)
